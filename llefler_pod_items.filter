@@ -1,0 +1,76 @@
+// Adopted from:
+// Simplicity v2.5 lootfilter by Joy Narical, 2019
+// more info at http://pathofdiablo.com/wiki/index.php/Loot_Filtration
+
+// Hide gold piles below certain treshhold based on character level
+ItemDisplay[CLVL>7  GOLD<50]:
+ItemDisplay[CLVL>14 GOLD<100]:
+ItemDisplay[CLVL>21 GOLD<200]:
+ItemDisplay[CLVL>28 GOLD<300]:
+ItemDisplay[CLVL>35 GOLD<400]:
+ItemDisplay[CLVL>40 GOLD<500]:
+ItemDisplay[CLVL>60 GOLD<1000]:
+ItemDisplay[CLVL>70 GOLD<1500]:
+ItemDisplay[CLVL>80 GOLD<2000]:
+
+
+// POTIONS
+ItemDisplay[hp1 CLVL<15]: %RED%[%GRAY%Health%RED%]
+ItemDisplay[hp2 CLVL<15]: %RED%[%WHITE%Health%RED%]
+ItemDisplay[mp1 CLVL<15]: %BLUE%[%GRAY%Mana%BLUE%]
+ItemDisplay[mp2 CLVL<15]: %BLUE%[%WHITE%Mana%BLUE%]
+ItemDisplay[hp1 OR mp1]:
+
+ItemDisplay[hp2 CLVL<20]: %RED%[%GRAY%Health%RED%]
+ItemDisplay[hp3 CLVL<20]: %RED%[%WHITE%Health%RED%]
+ItemDisplay[mp2 CLVL<20]: %BLUE%[%GRAY%Mana%BLUE%]
+ItemDisplay[mp3 CLVL<20]: %BLUE%[%WHITE%Mana%BLUE%]
+ItemDisplay[hp2 OR mp2]:
+
+ItemDisplay[hp3 CLVL<30]: %RED%[%GRAY%Health%RED%]
+ItemDisplay[hp4 CLVL<30]: %RED%[%WHITE%Health%RED%]
+ItemDisplay[mp3 CLVL<30]: %BLUE%[%GRAY%Mana%BLUE%]
+ItemDisplay[mp4 CLVL<30]: %BLUE%[%WHITE%Mana%BLUE%]
+ItemDisplay[hp3 OR mp3]:
+
+ItemDisplay[hp4 CLVL>70]:
+ItemDisplay[mp4 CLVL>70]:
+
+ItemDisplay[hp4]: %RED%[%GRAY%H4%RED%] // Greater Healing potion
+ItemDisplay[hp5]: %RED%[%WHITE%H5%RED%] // Super Healing potion
+ItemDisplay[mp4]: %BLUE%[%GRAY%M4%BLUE%] // Greater Mana potion
+ItemDisplay[mp5]: %BLUE%[%WHITE%M5%BLUE%] // Super Mana potion
+
+ItemDisplay[rvs]: %PURPLE%[%GRAY%Rejuv%PURPLE%] // Rejuvenation potion
+ItemDisplay[rvl]: %PURPLE%[%WHITE%FRejuv%PURPLE%] // Full Rejuvenation potion
+
+// hide gems by grade based on character level
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>14]: // chipped
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf AND CLVL>24]: // flawed
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku AND CLVL>59]: // standart
+//ItemDisplay[glv OR gly OR glb OR glg OR glr OR glw OR skl AND CLVL>85]: // flawless
+
+// hide white/magic arrows and bolts (show only for starting characters)
+ItemDisplay[(aq2 OR cq2) (NMAG OR MAG) CLVL>9]:
+
+//hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling potions
+// (show only for starting characters)
+ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
+
+// Wirt's leg :)
+ItemDisplay[leg]: %NAME%
+
+//hide stamina, keys, scrolls and thawing/antidote potions
+// (show only for starting characters)
+ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
+
+// Make stamina, keys, scrolls and thawing/antidote potions barely visible
+// after first X levels
+//ItemDisplay[key]: %GRAY%Key
+
+//ItemDisplay[tsc]: %BLUE%P%WHITE%ortal
+//ItemDisplay[isc]: %GREEN%I%WHITE%dentify
+
+//ItemDisplay[vps]: %BLACK%Stamina
+//ItemDisplay[wms]: %BLACK%Thawing
+//ItemDisplay[yps]: %BLACK%Antidote
