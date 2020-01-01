@@ -74,3 +74,8 @@ ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
 //ItemDisplay[vps]: %BLACK%Stamina
 //ItemDisplay[wms]: %BLACK%Thawing
 //ItemDisplay[yps]: %BLACK%Antidote
+
+// ** All Items [ilvl] NAME [Sockets] (Price)]
+ItemDisplay[!ID]: (L%ILVL%) %NAME%
+ItemDisplay[SOCK=0]:(L%ILVL%) %NAME%
+ItemDisplay[]:(L%ILVL%) %NAME% %GRAY%[%SOCKETS%]
