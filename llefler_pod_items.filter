@@ -41,8 +41,8 @@ ItemDisplay[hp5]: %RED%[%WHITE%H5%RED%] // Super Healing potion
 ItemDisplay[mp4]: %BLUE%[%GRAY%M4%BLUE%] // Greater Mana potion
 ItemDisplay[mp5]: %BLUE%[%WHITE%M5%BLUE%] // Super Mana potion
 
-ItemDisplay[rvs]: %PURPLE%[%GRAY%Rejuv%PURPLE%] // Rejuvenation potion
-ItemDisplay[rvl]: %PURPLE%[%WHITE%FRejuv%PURPLE%] // Full Rejuvenation potion
+ItemDisplay[rvs]: %PURPLE%[%GRAY%small%PURPLE%] // Rejuvenation potion
+ItemDisplay[rvl]: %PURPLE%[%WHITE%full%PURPLE%] // Full Rejuvenation potion
 
 // hide gems by grade based on character level
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>14]: // chipped
@@ -67,39 +67,39 @@ ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
 // ** RUNES
 // Indicators: Yellow (1-19), Red (20-26), Purple (27-33)
  
-ItemDisplay[r01]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r02]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r03]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r04]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r05]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r06]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r07]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r08]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r09]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r10]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r11]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r12]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r13]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r14]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r15]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r16]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r17]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r18]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r19]: %GRAY%(#%RUNENUM%) %ORANGE%%RUNENAME% Rune
-ItemDisplay[r20]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r21]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r22]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r23]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r24]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r25]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r26]: %GRAY%(#%RUNENUM%) %RED%%RUNENAME% Rune
-ItemDisplay[r27]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r28]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r29]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r30]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r31]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r32]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
-ItemDisplay[r33]: %GRAY%(#%RUNENUM%) %PURPLE%%RUNENAME% Rune
+ItemDisplay[r01]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r02]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r03]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r04]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r05]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r06]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r07]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r08]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r09]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r10]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r11]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r12]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r13]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r14]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r15]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r16]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r17]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r18]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r19]: %ORANGE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r20]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r21]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r22]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r23]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r24]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r25]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r26]: %RED%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r27]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r28]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r29]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r30]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r31]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r32]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+ItemDisplay[r33]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
 
 // ** All Items NAME[Sockets][Eth][Lilvl]]
 ItemDisplay[!ID]: %NAME% [L%ILVL%]
