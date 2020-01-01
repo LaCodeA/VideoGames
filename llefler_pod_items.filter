@@ -1,6 +1,4 @@
-// Adopted from:
-// Simplicity v2.5 lootfilter by Joy Narical, 2019
-// more info at http://pathofdiablo.com/wiki/index.php/Loot_Filtration
+// llefler 2020_01_01
 
 // Hide gold piles below certain treshhold based on character level
 ItemDisplay[CLVL>7  GOLD<50]:
