@@ -75,7 +75,13 @@ ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
 //ItemDisplay[wms]: %BLACK%Thawing
 //ItemDisplay[yps]: %BLACK%Antidote
 
-// ** All Items [ilvl] NAME [Sockets] (Price)]
-ItemDisplay[!ID]: (L%ILVL%) %NAME%
-ItemDisplay[SOCK=0]:(L%ILVL%) %NAME%
-ItemDisplay[]:(L%ILVL%) %NAME% %GRAY%[%SOCKETS%]
+// ** All Items [ilvl]NAME[Sockets]]
+ItemDisplay[!ID]:(L%ILVL%)%NAME%
+ItemDisplay[SOCK=0]:(L%ILVL%)%NAME%
+ItemDisplay[]:(L%ILVL%)%NAME%%GRAY%[%SOCKETS%]
+
+// ** Eth Items (To get rid of completely gray color)
+ItemDisplay[ETH !MAG !RARE !UNI !RW]:%GRAY%(Eth) %WHITE%%NAME%%CONTINUE%
+ 
+// ** Sockets
+ItemDisplay[!UNI !SET !MAG !RARE SOCK>0]: %NAME%%CONTINUE%
