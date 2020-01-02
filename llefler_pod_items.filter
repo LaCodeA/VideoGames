@@ -38,8 +38,8 @@ ItemDisplay[hp5]: %RED%[%WHITE%H5%RED%] // Super Healing potion
 ItemDisplay[mp4]: %BLUE%[%GRAY%M4%BLUE%] // Greater Mana potion
 ItemDisplay[mp5]: %BLUE%[%WHITE%M5%BLUE%] // Super Mana potion
 
-ItemDisplay[rvs]: %PURPLE%[%GRAY%small%PURPLE%] // Rejuvenation potion
-ItemDisplay[rvl]: %PURPLE%[%WHITE%full%PURPLE%] // Full Rejuvenation potion
+ItemDisplay[rvs]: %PURPLE%[%GRAY%rej%PURPLE%] // Rejuvenation potion
+ItemDisplay[rvl]: %PURPLE%[%WHITE%FULL%PURPLE%] // Full Rejuvenation potion
 
 // hide gems by grade based on character level
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc AND CLVL>14]: // chipped
@@ -97,6 +97,13 @@ ItemDisplay[r30]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
 ItemDisplay[r31]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
 ItemDisplay[r32]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
 ItemDisplay[r33]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
+
+// ** CHARMS AND JEWELS
+// Minimap: Blue (Magic), Yellow (Rare), Gold (Unique)
+ 
+ItemDisplay[!UNI !RARE (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%BLUE%%WHITE%%CONTINUE%
+ItemDisplay[RARE jew]: %NAME%%YELLOW%%WHITE%%CONTINUE%
+//ItemDisplay[UNI (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%GOLD%%WHITE%%CONTINUE%
 
 // ** All Items NAME[Sockets][Eth][Lilvl]]
 ItemDisplay[!ID]: %NAME% [L%ILVL%]
