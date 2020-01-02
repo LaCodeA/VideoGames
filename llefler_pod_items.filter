@@ -101,8 +101,8 @@ ItemDisplay[r33]: %PURPLE%%RUNENAME% Rune [%RUNENUM%]
 // ** CHARMS AND JEWELS
 // Minimap: Blue (Magic), Yellow (Rare), Gold (Unique)
  
-ItemDisplay[!UNI !RARE (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%BLUE%%WHITE%%CONTINUE%
-ItemDisplay[RARE jew]: %NAME%%YELLOW%%WHITE%%CONTINUE%
+ItemDisplay[!UNI !RARE (cm1 OR cm2 OR cm3 OR jew)]: %ORANGE%%NAME% [L%ILVL%]
+ItemDisplay[RARE jew]: %ORANGE%%NAME% [R][L%ILVL%]
 //ItemDisplay[UNI (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%GOLD%%WHITE%%CONTINUE%
 
 // ** All Items NAME[Sockets][Eth][Lilvl]]
