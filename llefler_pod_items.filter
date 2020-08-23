@@ -67,7 +67,7 @@ ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
 //═╡ Runes ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════
 // └───────┘
 // Modification
-ItemDisplay[RUNE>0 RUNE<20]: %TAN%%NAME% Rune [%RUNENUM%]%CONTINUE%
+ItemDisplay[RUNE>0 RUNE<20]: %ORANGE%%NAME% Rune [%RUNENUM%]%CONTINUE%
 ItemDisplay[RUNE>19 RUNE<25]: %RED%%NAME% Rune [%RUNENUM%]%CONTINUE%
 ItemDisplay[RUNE>24]: %PURPLE%%NAME% Rune [%RUNENUM%]%CONTINUE%
 
