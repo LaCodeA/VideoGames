@@ -61,21 +61,7 @@ ItemDisplay[leg]: %NAME%
 // (show only for starting characters)
 ItemDisplay[key OR tsc OR isc OR vps OR wms OR yps AND CLVL>9]:
 
-// ** CHARMS AND JEWELS
-// Minimap: Blue (Magic), Yellow (Rare), Gold (Unique)
- 
-ItemDisplay[!UNI !RARE (cm1 OR cm2 OR cm3 OR jew)]: %ORANGE%%NAME% [L%ILVL%]
-ItemDisplay[RARE jew]: %ORANGE%%NAME% [R][L%ILVL%]
-//ItemDisplay[UNI (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%GOLD%%WHITE%%CONTINUE%
-
-// ** All Items NAME[Sockets][Eth][Lilvl]]
-ItemDisplay[!ID]: %NAME% [L%ILVL%]
-ItemDisplay[SOCK=0]: %NAME% [L%ILVL%]
-ItemDisplay[ETH AND SOCK=0]: %NAME% [Eth][L%ILVL%]
-ItemDisplay[ETH]: %NAME% [%SOCKETS%][Eth][L%ILVL%]
-ItemDisplay[]: %NAME% [%SOCKETS%][L%ILVL%]
-
------------------------- https://github.com/BetweenWalls/Feather ----------------------------
+------------------------ \/\/\/ https://github.com/BetweenWalls/Feather \/\/\/ ----------------------------
 
 // ┌───────┐
 //═╡ Runes ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -162,3 +148,19 @@ ItemDisplay[(NMAG ILVL>9) (CL1 (SK221=0 SK222=0 SK223=0 SK224=0 SK225=0 SK226=0 
 ItemDisplay[(NMAG ILVL>9) ((WP12 OR CL4) (SK66=0 SK67=0 SK68=0 SK69=0 SK70=0 SK71=0 SK72=0 SK73=0 SK74=0 SK75=0 SK76=0 SK77=0 SK78=0 SK79=0 SK80=0 SK81=0 SK82=0 SK83=0 SK84=0 SK85=0 SK86=0 SK87=0 SK88=0 SK89=0 SK90=0 SK91=0 SK92=0 SK93=0 SK94=0 SK95=0))]:
 ItemDisplay[(NMAG ILVL>9) ((WP13 !((SOCK>3 !ETH) OR (7ws ETH (SOCK>4 OR SOCK=0)))) (SK96=0 SK97=0 SK98=0 SK99=0 SK100=0 SK101=0 SK102=0 SK103=0 SK104=0 SK105=0 SK106=0 SK107=0 SK108=0 SK109=0 SK110=0 SK111=0 SK112=0 SK113=0 SK114=0 SK115=0 SK116=0 SK117=0 SK118=0 SK119=0 SK120=0 SK121=0 SK122=0 SK123=0 SK124=0 SK125=0))]:
 ItemDisplay[(NMAG ILVL>9) ((CL6 OR (WP11 !(ETH (6cs OR 6bs OR 6ws) (SOCK=0 OR SOCK>3)))) (SK36=0 SK37=0 SK38=0 SK39=0 SK40=0 SK41=0 SK42=0 SK43=0 SK44=0 SK45=0 SK46=0 SK47=0 SK48=0 SK49=0 SK50=0 SK51=0 SK52=0 SK53=0 SK54=0 SK55=0 SK56=0 SK57=0 SK58=0 SK59=0 SK60=0 SK61=0 SK62=0 SK63=0 SK64=0 SK65=0))]:
+
+------------------------ ^^^ https://github.com/BetweenWalls/Feather ^^^ ----------------------------
+
+// ** CHARMS AND JEWELS
+// Minimap: Blue (Magic), Yellow (Rare), Gold (Unique)
+ 
+ItemDisplay[!UNI !RARE (cm1 OR cm2 OR cm3 OR jew)]: %ORANGE%%NAME% [L%ILVL%]
+ItemDisplay[RARE jew]: %ORANGE%%NAME% [R][L%ILVL%]
+//ItemDisplay[UNI (cm1 OR cm2 OR cm3 OR jew)]: %NAME%%GOLD%%WHITE%%CONTINUE%
+
+// ** All Items NAME[Sockets][Eth][Lilvl]]
+ItemDisplay[!ID]: %NAME% [L%ILVL%]
+ItemDisplay[SOCK=0]: %NAME% [L%ILVL%]
+ItemDisplay[ETH AND SOCK=0]: %NAME% [Eth][L%ILVL%]
+ItemDisplay[ETH]: %NAME% [%SOCKETS%][Eth][L%ILVL%]
+ItemDisplay[]: %NAME% [%SOCKETS%][L%ILVL%]
